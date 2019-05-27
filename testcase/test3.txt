@@ -1,0 +1,14 @@
+const NUM = 10,MAX = 'a',R = 1.50;
+var globol1,globol2:integer;
+ch1,ch2,ch3 :char;
+array0 : array[2] of integer;
+array1 : array[10] of integer;
+r1,r2,r3:real;
+
+begin 
+	read(globol1,globol2,r1,r2);
+	globol1:=globol1*globol2+MAX;
+	r3:=globol1+r1*r2-R;
+	write("globol1=",globol1);
+	write("r3=",r3)
+end.

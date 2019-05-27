@@ -1,0 +1,18 @@
+const A='a';
+var a,b,c,d,e,i:integer;
+arr : array[20] of integer;
+c1,c2:char;
+r1:real;
+begin
+	a:=1;
+	b:=1;
+	c1:=A;
+	c2:=a;
+	a:=A;
+	a:=c1/c1;
+	if a = 1 then write("a = 1");
+	r1 := a;
+	a:=r1;
+	r1:=A
+end
+.

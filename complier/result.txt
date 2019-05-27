@@ -1,0 +1,92 @@
+    0 var a,b,c:integer;
+    0 aaa:array[1] of integer;
+    0 function f(a:integer):integer;
+    0 var b:integer;
+    0 begin end;
+    0 begin 
+    1 a:=f(a)
+    4 end.
+
+
+	ident	link	obj	typ	ref	nrm	lev	adr
+         0	         a	        -1	       pro	      null	         0	         1	         0	         0
+
+         1	      real	         0	      type	      real	         0	         1	         0	         1
+
+         2	      char	         1	      type	      char	         0	         1	         0	         1
+
+         3	   integer	         2	      type	       int	         0	         1	         0	         1
+
+         4	      read	         3	       pro	      null	         0	         1	         0	         1
+
+         5	     write	         4	       pro	      null	         0	         1	         0	         3
+
+         6	          	         5	       pro	      null	         2	         1	         0	         1
+
+         7	         a	         0	       var	       int	         0	         1	         1	         5
+
+         8	         b	         7	       var	       int	         0	         1	         1	         6
+
+         9	         c	         8	       var	       int	         0	         1	         1	         7
+
+        10	       aaa	         9	       var	     array	         1	         1	         1	         8
+
+        11	         f	        10	      func	       int	         3	         1	         1	         0
+
+        12	         a	         0	       var	       int	         0	         1	         2	         5
+
+        13	         b	        12	       var	       int	         0	         1	         2	         6
+
+
+
+blocks     last    lpar    psize    vsize
+         0         0         0         0         0
+         1         6         1         0         0
+         2        11         6         5         9
+         3        13        12         6         7
+
+
+array    xtyp   etyp   high  elsz    size
+   0        0    0    0    0    0
+   1        1    1    1    1    1
+
+
+string 
+
+
+rcount
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+
+
+display
+1
+2
+3
+0
+0
+0
+0
+0
+0
+0
+
+
+code
+   0     EXF
+   1     LDA       1       5
+   2     MKS      11
+   3     LOD       1       5
+   4     CAL       5
+   5     STO
+   6     HLT
+
+key words

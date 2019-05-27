@@ -1,0 +1,64 @@
+ const a =2 ,b = +3,d = 2.45,u = 'U';
+ var x,y,g,m,n,w,x1,x2,i:integer;
+ cl:array[3] of char;
+ procedure swap();
+	var temp:integer;
+	function mod(s,t:integer):integer;
+	    begin
+	    	mod:=s+t+1;
+	    end;
+	begin
+		temp := x;
+		x := y;
+		y := temp;
+        w :=mod(2,3);
+	end;  
+ function factorial(n:integer) integer;
+	begin
+		if n = 0 then
+		factorial:=1
+		else
+		factorial:= n*factorial(n-1);
+	end;  
+ function mod(var x,y:integer):integer;
+    begin
+	    x := x - x/y *y;
+    end;
+
+ begin
+    x:=a;
+    y:=b;
+    n:=mod(x,y);
+    cl[0]:=factorial(x);
+    cl[1]:=factorial(y);
+    read(x);
+    read(y);
+    x1:=x;
+    x2:=y;
+    repeat
+    	begin
+    		swap();
+    		n:=mod(x,y);
+    	end
+    until x = 0;
+
+    g:=y;
+    m:=x1*x2/g;
+
+	write("The result is:",g);
+	write(m);
+	write("You can do anything!");
+	for m := 0 to 10 do 
+	begin
+	   write(cl[0]+m-1);
+	end;
+
+	for m:=21 downto 6 do
+	begin
+		write(cl[1]-m);
+	end;
+	write(w);
+	cl[0] := cl[0]+50;
+	write(cl[0]);
+
+ end.

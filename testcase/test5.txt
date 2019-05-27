@@ -1,0 +1,33 @@
+const A = 'A',M = 'M', a = 'a', m = 'm';
+
+var b,c,d :integer; 
+ch1,ch2:char;
+
+begin
+	write ("Input a letter");
+	read(ch1);
+
+	if ch1 >= a then
+	begin
+		if ch1 <= m then
+		begin
+			write(a)
+		end
+		else
+		begin
+			write("after m    ")
+		end
+	end
+	else
+	begin
+		if ch1 >= A then
+		begin
+			write("Big")
+		end
+		else
+		begin
+			write("invalid  ")
+		end;
+	end;
+end
+.

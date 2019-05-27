@@ -1,0 +1,70 @@
+const A1 = 'A',M1 = 'M', a = 'a', m = 'm';
+
+var i,i1,i2,i3,valid,ordc1 :integer; 
+c1,c2:char;
+
+begin
+	i1 := 1;
+	i2 := 2;
+	valid := 0;
+
+	for i := 1 to 3 do
+	begin
+
+		write ("Input two letters ");
+		read(c1, c2);
+
+		if c1 >= a then
+		begin
+			if c1 <= m then
+			begin
+				ordc1 := c1 - a + 97;
+				write(ordc1);
+			end
+			else
+			begin
+				write(" After m ")
+			end
+		end
+		else
+		begin
+			if c1 >= A1 then
+			begin
+				if c1 <= M1 then
+				begin
+					ordc1 := c1 - A1 + 65;
+					write(ordc1);
+				end
+				else
+				begin
+					write(" After M ")
+				end
+			end
+			else
+			begin
+				write(" Invalid ");
+				valid := 1
+			end;
+		end;
+
+
+		if c1 <= c2 then
+		begin
+			i3 := (a*i1 + m*i2)/(a + m);
+		end
+		else
+		begin
+			i3 := (a*i2 + m*i1)/(a - m);
+		end;
+
+		if valid = 0 then
+		begin
+			write(i3)
+		end
+		else
+		begin
+			write(0)
+		end;
+	end
+end
+.

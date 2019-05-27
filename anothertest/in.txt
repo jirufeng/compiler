@@ -1,0 +1,13 @@
+program zeller(input,output);
+{$t+}
+var day , month,year,zday,m,y1,y2:integer;
+function a1(var a:integer):integer;
+begin 
+a1:=10;
+end;
+begin
+day:=0;
+month:=a(day);
+write(day);
+write(month)
+end.

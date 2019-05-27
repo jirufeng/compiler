@@ -1,0 +1,21 @@
+const NUM = 10,MAX = 'a',R = 1.50, A = 'a',Z='d';
+var globol1,globol2:integer;
+ch1,ch2,ch3 :char;
+array0 : array[2] of integer;
+array1 : array[10] of integer;
+r1,r2,r3:real;
+
+procedure set(var set1 :integer);
+	function set11(set2:integer):integer;
+		begin
+			set11:=set2+10;
+			set1:=10
+		end;
+	begin
+		globol1:=set11(1);
+		write("globol1=",globol1);
+		write("set1=",set1)
+	end;
+begin 
+	set(NUM)
+end.
